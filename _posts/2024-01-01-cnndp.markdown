@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "cNN-DP: Composite Neural Network with Differential Propagation for Impulsive Nonlinear Dynamics"
+date:   2024-01-01 00:00:00 +00:00
+image: /images/cnndp.jpg
+link: https://www.sciencedirect.com/science/article/pii/S0021999123006733
+categories: research
+authors: <a href="https://leehyeonbeen.github.io/"><strong><u>Hyeonbeen Lee</u></strong></a>,
+                  <a href="https://sites.google.com/view/imbd-lab/people?authuser=0" target="_blank">Seongji Han</a>,
+                  <a href="https://scholar.google.com/citations?user=6VAgYOYAAAAJ" target="_blank">Hee-Sun Choi</a>,
+                  <a href="https://www.jin-gyun-kim.com/" target="_blank">Jin-Gyun Kim</a>
+subtitle:
+venue: Journal of Computational Physics
+link: https://www.sciencedirect.com/science/article/pii/S0021999123006733
+arxiv: 
+code: https://github.com/leehyeonbeen/cNN-DP
+---
+Decomposition-based probabilistic modeling, frequency-awareness, and proprioception-to-wrench pretraining are combined to forecast contact- and vibration-rich wrench signals in the short-term future without a physical F/T sensor.
