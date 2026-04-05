@@ -3,6 +3,7 @@ layout: post
 title:  Frequency-aware Decomposition Learning for Sensorless Wrench Forecasting on a Vibration-rich Hydraulic Manipulator</a>
 date:   2026-04-01 00:00:00 +00:00
 image: /images/fdn.jpg
+link:
 categories: research
 authors: <a href="https://leehyeonbeen.github.io/"><strong><u>Hyeonbeen Lee</u></strong></a>,
                   Min-Jae Jung,
@@ -15,4 +16,4 @@ venue: "Submitted"
 arxiv: 
 code: https://github.com/leehyeonbeen/FDN
 ---
-Decomposition-based probabilistic modeling, frequency-awareness, and proprioception-to-wrench pretraining are combined to forecast contact- and vibration-rich wrench signals in the short-term future without a physical F/T sensor.
+Combines decomposition-based probabilistic modeling, frequency-awareness, and proprioception-to-wrench transfer learning to forecast contact- and vibration-rich wrench signals in the short-term future without a physical F/T sensor.

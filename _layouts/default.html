@@ -38,19 +38,19 @@
                 Hyeonbeen (Edward) Lee
               </h1>
               <p>
-                I'm an incoming PhD student at <a href="https://www.vt.edu/" target="_blank">Virginia Tech</a>,
-                where I'll be working with <a href="https://simonstepputtis.com/" target="_blank">Prof. Simon
+                I am an incoming PhD student at <a href="https://www.vt.edu/" target="_blank">Virginia Tech</a>,
+                where I'll work with <a href="https://simonstepputtis.com/" target="_blank">Prof. Simon
                   Stepputtis</a> in the <a href="https://tealab.ai/" target="_blank">TEA Lab</a>. I am interested in
                 physics-aware machine learning and neurosymbolic AI for contact-rich manipulation.
               </p>
               </p>
               <!-- <p> <u><b>희쨩 loves meowl, hyeonbeen and food!!!!!!!!!!!!!!!</b></u> </p> -->
               <p>
-                Before Virginia Tech, I received my B.Eng. and M.Eng. degrees in Mechanical Engineering at <a
+                Before joining Virginia Tech, I received my B.Eng. and M.Eng. degrees in Mechanical Engineering at <a
                   href="https://www.khu.ac.kr/eng/user/main/view.do" target="_blank">Kyung Hee University</a>, South
                 Korea, where I worked with <a href="https://www.jin-gyun-kim.com/" target="_blank">Prof. Jin-Gyun
                   Kim</a> in the <a href="https://sites.google.com/site/modelingnsimulation/home"
-                  target="_blank">Modeling & Simulation Lab</a>. In 2023, I was also fortunate to work with <a
+                  target="_blank">Modeling & Simulation Lab</a>. In 2023, I was fortunate to work with <a
                   href="https://clvrai.com/web_lim/" target="_blank">Prof. Joseph Lim</a> in the <a
                   href="https://www.clvrai.com/" target="_blank">CLVR Lab</a> at <a href="https://gsai.kaist.ac.kr/"
                   target="_blank">KAIST AI</a>.
@@ -62,7 +62,7 @@
                 <a href="https://scholar.google.com/citations?user=puK1rBEAAAAJ" target="_blank">Scholar</a>
                 &nbsp;/&nbsp;
                 <a href="https://www.linkedin.com/in/leehyeonbeen/" target="_blank">LinkedIn</a> &nbsp;/&nbsp;
-                <a href="https://github.com/leehyeonbeen/" target="_blank">Github</a>
+                <a href="https://github.com/leehyeonbeen/" target="_blank">GitHub</a>
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
@@ -78,7 +78,7 @@
               <h2>Research</h2>
               <p>
                 I'm interested in grounding AI models in physics to enable efficient, interpretable and generalizable
-                control of robot-environment interactions. In Kyung Hee University, I worked on physics-aware machine
+               control of robot-environment interactions. In Kyung Hee University, I used to work on physics-aware machine
                 learning for modeling nonlinear dynamics of contact- and vibration-rich physical systems.
               </p>
             </td>
@@ -141,13 +141,15 @@
         <br>
         <br>
         <br>
+
+
         <!-- <table
           style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Intel Projects</h2>
-              <p>Besides my work on the RealSense depth sensors and the publications above, a sampling of my publicly
-                disclosed work
+              <h2>Projects</h2>
+              <p>
+                
               </p>
             </td>
           </tr>
@@ -157,48 +159,46 @@
 
           {% for post in site.posts %}
           {% for cat in post.categories %}
-          {% if cat == 'Intel' %}
+          {% if cat == 'project' %}
           <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
               <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
             <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
+              <h3>
+                {% if post.link %}
+                <a href="{{ post.link }}" target="_blank">{{ post.title }}</a>
+                {% else %}
+                {{ post.title }}
+                {% endif %}
+              </h3>
               <br>
-              <em>{{post.categories}} {{post.course}}</em>
-              <br>
-              {{ post.date | date: "%Y-%m-%d" }}
+              {{post.authors}}
 
               <br>
-              {% if post.website %}
-              <a href="{{post.website}}">website</a> /
-              {% endif %}
-              {% if post.paper %}
-              <a href="{{post.paper}}">paper</a> /
-              {% endif %}
-              {% if post.patent %}
-              <a href="{{post.patent}}">patent</a> /
-              {% endif %}
-              {% if post.patent2 %}
-              <a href="{{post.patent2}}">patent #2</a> /
-              {% endif %}
-              {% if post.patent3 %}
-              <a href="{{post.patent3}}">patent #3</a> /
+              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
+              <br>
+              {% if post.arxiv %}
+              <a href="{{post.arxiv}}" target="_blank">[arxiv]</a> /
               {% endif %}
               {% if post.video %}
-              <a href="{{post.video}}">video</a> /
-              {% endif %}
-              {% if post.video2 %}
-              <a href="{{post.video2}}">video #2</a> /
+              <a href="{{post.video}}" target="_blank">[video]</a> /
               {% endif %}
               {% if post.code %}
-              <a href="{{post.code}}">code</a> /
+              <a href="{{post.code}}" target="_blank">[code]</a>{% if post.poster or post.slides or post.website or
+              post.youtube %} /{% endif %}
               {% endif %}
               {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
+              <a href="{{post.poster}}" target="_blank">[poster]</a> /
               {% endif %}
               {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
+              <a href="{{post.slides}}" target="_blank">[slides]</a> /
+              {% endif %}
+              {% if post.website %}
+              <a href="{{post.website}}" target="_blank">[website]</a> /
+              {% endif %}
+              {% if post.youtube %}
+              <a href="{{post.youtube}}" target="_blank">[youtube]</a> /
               {% endif %}
               <p></p>
               {{ post.excerpt }}
@@ -207,76 +207,10 @@
           {% endif %}
           {% endfor %}
           {% endfor %}
-        </table> -->
-        <br>
-        <br>
-        <br>
-        <!-- <table
-          style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Other Projects</h2>
-              <p> These include coursework, side projects and unpublished research work.
-              </p>
-            </td>
-          </tr>
         </table>
-        <table
-          style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-
-          {% for post in site.posts %}
-          {% for cat in post.categories %}
-          {% if cat != 'research' and cat != 'Intel' %}
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
-              <br>
-              <em>{{post.categories}} {{post.course}}</em>
-              <br>
-              {{ post.date | date: "%Y-%m-%d" }}
-
-              <br>
-              {% if post.website %}
-              <a href="{{post.website}}">website</a> /
-              {% endif %}
-              {% if post.paper %}
-              <a href="{{post.paper}}">paper</a> /
-              {% endif %}
-              {% if post.patent %}
-              <a href="{{post.patent}}">patent</a> /
-              {% endif %}
-              {% if post.patent2 %}
-              <a href="{{post.patent2}}">patent #2</a> /
-              {% endif %}
-              {% if post.patent3 %}
-              <a href="{{post.patent3}}">patent #3</a> /
-              {% endif %}
-              {% if post.video %}
-              <a href="{{post.video}}">video</a> /
-              {% endif %}
-              {% if post.video2 %}
-              <a href="{{post.video2}}">video #2</a> /
-              {% endif %}
-              {% if post.code %}
-              <a href="{{post.code}}">code</a> /
-              {% endif %}
-              {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
-              {% endif %}
-              {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
-              {% endif %}
-              <p></p>
-              {{ post.excerpt }}
-            </td>
-          </tr>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </table> -->
+        <br>
+        <br>
+        <br> -->
 
         <table
           style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">

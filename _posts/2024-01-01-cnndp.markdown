@@ -10,9 +10,8 @@ authors: <a href="https://leehyeonbeen.github.io/"><strong><u>Hyeonbeen Lee</u><
                   <a href="https://scholar.google.com/citations?user=6VAgYOYAAAAJ" target="_blank">Hee-Sun Choi</a>,
                   <a href="https://www.jin-gyun-kim.com/" target="_blank">Jin-Gyun Kim</a>
 subtitle:
-venue: Journal of Computational Physics
-link: https://www.sciencedirect.com/science/article/pii/S0021999123006733
+venue: Journal of Computational Physics (WoS IF Top 2.5% in Physics, Mathematical)  
 arxiv: 
 code: https://github.com/leehyeonbeen/cNN-DP
 ---
-Decomposition-based probabilistic modeling, frequency-awareness, and proprioception-to-wrench pretraining are combined to forecast contact- and vibration-rich wrench signals in the short-term future without a physical F/T sensor.
+Sequentially predicts lower- to higher-order dynamic responses from time and time-invariant system parameters through physics-aware differential propagation, enabling accurate data-driven modeling of impulsive dynamic responses.

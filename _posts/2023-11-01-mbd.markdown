@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Multi-body Dynamics Model for Spent Nuclear Fuel Transportation System under Normal Transport Test Conditions"
+date:   2023-11-01 00:00:00 +00:00
+image: /images/mbd.jpg
+link: https://www.sciencedirect.com/science/article/pii/S1738573323003492
+categories: research
+authors: <a href="https://sites.google.com/view/imbd-lab/people?authuser=0" target="_blank">Seongji Han*</a>, <a href="https://sites.google.com/view/gejeong/people/professor?authuser=0" target="_blank">Gil-Eon Jeong*</a>, <a href="https://leehyeonbeen.github.io/"><strong><u>Hyeonbeen Lee</u></strong></a>, <a href="https://www.jin-gyun-kim.com/" target="_blank">Jin-Gyun Kim</a> (* Co-first authors)
+subtitle:
+venue: Nuclear Engineering and Technology (WoS IF Top 13.7% in Nuclear Science & Technology)
+arxiv: 
+code: 
+---
+Simulates the dynamic response of a spent nuclear fuel transportation system (KORAD-21) under normal road and sea transport conditions using a multi-body dynamics model calibrated and validated against real-world transport data.
