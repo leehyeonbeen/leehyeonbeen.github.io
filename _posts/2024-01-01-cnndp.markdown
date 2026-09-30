@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "cNN-DP: Composite Neural Network with Differential Propagation for Impulsive Nonlinear Dynamics"
+title:  "cNN-DP: Composite neural network with differential propagation for impulsive nonlinear dynamics"
 date:   2024-01-01 00:00:00 +00:00
 image: /images/cnndp.jpg
 link: 

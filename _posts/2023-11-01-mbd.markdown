@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Multi-body Dynamics Model for Spent Nuclear Fuel Transportation System under Normal Transport Test Conditions"
+title:  "Multi-body dynamics model for spent nuclear fuel transportation system under normal transport test conditions"
 date:   2023-11-01 00:00:00 +00:00
 image: /images/mbd.jpg
 link: 
