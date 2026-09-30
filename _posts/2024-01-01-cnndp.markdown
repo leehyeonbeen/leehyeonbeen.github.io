@@ -15,4 +15,4 @@ paper: https://www.sciencedirect.com/science/article/pii/S0021999123006733
 arxiv: 
 code: https://github.com/leehyeonbeen/cNN-DP
 ---
-Progressively mapping system parameters to higher-order dynamics via a chain of neural subnetworks, termed the differential propagation mechanism, enables accurate data-driven modeling of high-order nonlinear dynamics.
+Progressively mapping from system parameters to higher-order dynamics via a chain of neural subnetworks, termed the differential propagation mechanism, enables accurate data-driven modeling of impulsive high-order nonlinear dynamics.
