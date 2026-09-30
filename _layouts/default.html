@@ -42,19 +42,19 @@
               </h1>
               <p>
                 I am a first-year PhD student at <a href="https://www.vt.edu/" target="_blank">Virginia Tech</a>,
-                where I'm working with <a href="https://simonstepputtis.com/" target="_blank">Prof. Simon
+                where I'm working with <a href="https://simonstepputtis.com/" target="_blank">Simon
                   Stepputtis</a> in the <a href="https://tealab.ai/" target="_blank">TEA Lab</a>. My research interests include
-                physics-aware machine learning and neurosymbolic AI for contact-rich robotics.
+                  Vision-Language-Action (VLA) models, contact-rich manipulation, and sensorless state estimation.
               </p>
               </p>
               <!-- <p> <u><b>희쨩 loves meowl, hyeonbeen and food!!!!!!!!!!!!!!!</b></u> </p> -->
               <p>
                 Before joining Virginia Tech, I received my B.Eng. and M.Eng. degrees in Mechanical Engineering from <a
                   href="https://www.khu.ac.kr/eng/user/main/view.do" target="_blank">Kyung Hee University</a>, where I
-                was advised by <a href="https://www.jin-gyun-kim.com/" target="_blank">Prof. Jin-Gyun
+                was advised by <a href="https://www.jin-gyun-kim.com/" target="_blank">Jin-Gyun
                   Kim</a> in the <a href="https://sites.google.com/site/modelingnsimulation/home"
-                  target="_blank">Modeling & Simulation Lab</a>. During my master's studies, I was also mentored by <a href="https://scholar.google.com/citations?user=6VAgYOYAAAAJ" target="_blank">Prof. Hee-Sun Choi</a> at <a href="https://en.sejong.ac.kr/eng/index.do" target="_blank">Sejong University</a> and <a href="https://sites.google.com/view/imbd-lab/people?authuser=0" target="_blank">Prof. Seongji Han</a> at <a href="https://plus.cnu.ac.kr/html/en/" target="_blank">Chungnam National University</a>. In 2023, I was fortunate to work with <a
-                  href="https://clvrai.com/web_lim/" target="_blank">Prof. Joseph Lim</a> in the <a
+                  target="_blank">Modeling & Simulation Lab</a>. During my master's studies, I was also mentored by <a href="https://scholar.google.com/citations?user=6VAgYOYAAAAJ" target="_blank">Hee-Sun Choi</a> at <a href="https://en.sejong.ac.kr/eng/index.do" target="_blank">Sejong University</a> and <a href="https://sites.google.com/view/imbd-lab/people?authuser=0" target="_blank">Seongji Han</a> at <a href="https://plus.cnu.ac.kr/html/en/" target="_blank">Chungnam National University</a>. In 2023, I was fortunate to work with <a
+                  href="https://clvrai.com/web_lim/" target="_blank">Joseph Lim</a> in the <a
                   href="https://www.clvrai.com/" target="_blank">CLVR Lab</a> at <a href="https://gsai.kaist.ac.kr/"
                   target="_blank">KAIST AI</a>.
               </p>
@@ -82,9 +82,8 @@
             <td style="padding:2.5%;width:100%;vertical-align:middle">
               <h2>Research</h2>
               <p>
-                I'm currently interested in developing physics-aware neurosymbolic policies for efficient, interpretable, and generalizable
-                control of robot-environment interactions. At Kyung Hee University, I worked on data-driven
-                modeling of nonlinear dynamics in contact- and vibration-rich physical systems.
+                I'm currently interested in developing hierarchical Vision-Language-Action systems for real-time contact-rich manipulation. Prior to joining Virginia Tech, I worked on data-driven
+                modeling of nonlinear dynamics in contact- and vibration-rich physical systems at Kyung Hee University.
               </p>
             </td>
           </tr>
@@ -113,31 +112,17 @@
               <br>
               <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
               <br>
-              {% if post.arxiv %}
-              <a href="{{post.arxiv}}" target="_blank">[arXiv]</a> /
+              {% comment %} 링크 항목 추가: link_keys(front matter 키)와 link_labels(표시 이름)에 같은 순서로 추가 {% endcomment %}
+              {% assign link_keys = "arxiv,pdf,video,paper,code,dataset,poster,slides,website,youtube" | split: "," %}
+              {% assign link_labels = "arXiv,pdf,video,paper,code,dataset,poster,slides,website,youtube" | split: "," %}
+              {% assign links = "" | split: "" %}
+              {% for key in link_keys %}
+              {% if post[key] %}
+              {% capture link %}<a href="{{ post[key] }}" target="_blank">[{{ link_labels[forloop.index0] }}]</a>{% endcapture %}
+              {% assign links = links | push: link %}
               {% endif %}
-              {% if post.pdf %}
-              <a href="{{post.pdf}}" target="_blank">[pdf]</a> /
-              {% endif %}
-              {% if post.video %}
-              <a href="{{post.video}}" target="_blank">[video]</a> /
-              {% endif %}
-              {% if post.code %}
-              <a href="{{post.code}}" target="_blank">[code]</a>{% if post.poster or post.slides or post.website or
-              post.youtube %} /{% endif %}
-              {% endif %}
-              {% if post.poster %}
-              <a href="{{post.poster}}" target="_blank">[poster]</a> /
-              {% endif %}
-              {% if post.slides %}
-              <a href="{{post.slides}}" target="_blank">[slides]</a> /
-              {% endif %}
-              {% if post.website %}
-              <a href="{{post.website}}" target="_blank">[website]</a> /
-              {% endif %}
-              {% if post.youtube %}
-              <a href="{{post.youtube}}" target="_blank">[youtube]</a> /
-              {% endif %}
+              {% endfor %}
+              {{ links | join: " / " }}
               <p></p>
               {{ post.excerpt }}
             </td>

@@ -11,3 +11,4 @@ venue: "Submitted"
 arxiv: 
 code: 
 ---
+A buoyancy-aware Kalman filter fuses hydraulic pressure- and DNN-based force estimates to enable sensorless, real-time haptic feedback in underwater environments.

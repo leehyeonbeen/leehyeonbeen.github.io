@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  <a href="https://arxiv.org/abs/2604.12905" target="_blank">Frequency-aware Decomposition Learning for Sensorless Wrench Forecasting on a Vibration-rich Hydraulic Manipulator</a>
+title:  Frequency-aware decomposition learning for sensorless wrench estimation in vibration-rich robotic contact
 date:   2026-04-01 00:00:00 +00:00
 image: /images/fdn.jpg
 link:
@@ -10,10 +10,12 @@ authors: <a href="https://leehyeonbeen.github.io/"><strong><u>Hyeonbeen Lee</u><
                   Tae-Kyung Yeu,
                   <a href="https://robot.ust.ac.kr/members/lab-directors" target="_blank">Jong-Boo Han</a>,
                   <a href="https://robot.ust.ac.kr/members/lab-directors" target="_blank">Daegil Park</a>,
+                  <a href="https://simonstepputtis.com/" target="_blank">Simon Stepputtis</a>,
                   <a href="https://www.jin-gyun-kim.com/" target="_blank">Jin-Gyun Kim</a>
 subtitle:
 venue: "Submitted"
 arxiv: https://arxiv.org/abs/2604.12905
 code: https://github.com/leehyeonbeen/FDN
+dataset: https://zenodo.org/records/23026021
 ---
-Combines decomposition-based probabilistic modeling, frequency-awareness, and proprioception-to-wrench transfer learning to forecast contact- and vibration-rich wrench signals in the short-term future without a physical F/T sensor.
+A novel decomposition-based framework enables sensorless, multi-step-ahead estimation of high-frequency contact wrench in robotic grinding. Pretraining on an open-source everyday manipulation dataset transfers low-frequency wrench dynamics to the downstream grinding setting.

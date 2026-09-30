@@ -3,7 +3,7 @@ layout: post
 title:  "cNN-DP: Composite Neural Network with Differential Propagation for Impulsive Nonlinear Dynamics"
 date:   2024-01-01 00:00:00 +00:00
 image: /images/cnndp.jpg
-link: https://www.sciencedirect.com/science/article/pii/S0021999123006733
+link: 
 categories: research
 authors: <a href="https://leehyeonbeen.github.io/"><strong><u>Hyeonbeen Lee</u></strong></a>,
                   <a href="https://sites.google.com/view/imbd-lab/people?authuser=0" target="_blank">Seongji Han</a>,
@@ -11,7 +11,8 @@ authors: <a href="https://leehyeonbeen.github.io/"><strong><u>Hyeonbeen Lee</u><
                   <a href="https://www.jin-gyun-kim.com/" target="_blank">Jin-Gyun Kim</a>
 subtitle:
 venue: Journal of Computational Physics (WoS IF Top 2.5% in Physics, Mathematical)  
+paper: https://www.sciencedirect.com/science/article/pii/S0021999123006733
 arxiv: 
 code: https://github.com/leehyeonbeen/cNN-DP
 ---
-Sequentially predicts lower- to higher-order dynamic responses from time and time-invariant system parameters through physics-aware differential propagation, enabling accurate data-driven modeling of impulsive dynamic responses.
+Progressively mapping system parameters to higher-order dynamics via a chain of neural subnetworks, termed the differential propagation mechanism, enables accurate data-driven modeling of high-order nonlinear dynamics.
