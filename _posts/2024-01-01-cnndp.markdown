@@ -11,7 +11,7 @@ authors: <a href="https://leehyeonbeen.github.io/"><strong><u>Hyeonbeen Lee</u><
                   <a href="https://www.jin-gyun-kim.com/" target="_blank">Jin-Gyun Kim</a>
 subtitle:
 venue: Journal of Computational Physics (WoS IF Top 2.5% in Physics, Mathematical)  
-paper: https://www.sciencedirect.com/science/article/pii/S0021999123006733
+paper: https://doi.org/10.1016/j.jcp.2023.112578
 arxiv: 
 code: https://github.com/leehyeonbeen/cNN-DP
 ---

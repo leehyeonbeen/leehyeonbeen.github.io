@@ -14,8 +14,8 @@ authors: <a href="https://leehyeonbeen.github.io/"><strong><u>Hyeonbeen Lee</u><
                   <a href="https://www.jin-gyun-kim.com/" target="_blank">Jin-Gyun Kim</a>
 subtitle:
 venue: "Submitted"
-arxiv: https://arxiv.org/abs/2604.12905
+arxiv: https://doi.org/10.48550/arXiv.2604.12905
 code: https://github.com/leehyeonbeen/FDN
-dataset: https://zenodo.org/records/23026021
+dataset: https://doi.org/10.5281/zenodo.23026020
 ---
 A novel decomposition-based framework enables sensorless, multi-step-ahead estimation of high-frequency contact wrench in robotic grinding. Pretraining on an open-source everyday manipulation dataset transfers low-frequency wrench dynamics to the downstream grinding setting.

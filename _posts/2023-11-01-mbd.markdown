@@ -8,7 +8,7 @@ categories: research
 authors: <a href="https://sites.google.com/view/imbd-lab/people?authuser=0" target="_blank">Seongji Han*</a>, <a href="https://sites.google.com/view/gejeong/people/professor?authuser=0" target="_blank">Gil-Eon Jeong*</a>, <a href="https://leehyeonbeen.github.io/"><strong><u>Hyeonbeen Lee</u></strong></a>, <a href="https://www.jin-gyun-kim.com/" target="_blank">Jin-Gyun Kim</a> (* Co-first authors)
 subtitle:
 venue: Nuclear Engineering and Technology (WoS IF Top 13.7% in Nuclear Science & Technology)
-paper: https://www.sciencedirect.com/science/article/pii/S1738573323003492
+paper: https://doi.org/10.1016/j.net.2023.07.033
 arxiv: 
 code: 
 ---
