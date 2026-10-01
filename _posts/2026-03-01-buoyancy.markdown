@@ -7,7 +7,7 @@ link:
 categories: research
 authors: Bonhak Koo, Min-Jae Jung, <a href="https://leehyeonbeen.github.io/"><strong><u>Hyeonbeen Lee</u></strong></a>, Tae-Kyung Yeu, <a href="https://www.jin-gyun-kim.com/" target="_blank">Jin-Gyun Kim</a>, <a href="https://robot.ust.ac.kr/members/lab-directors" target="_blank">Jong-Boo Han</a>, Yeongjun Lee, <a href="https://robot.ust.ac.kr/members/lab-directors" target="_blank">Daegil Park</a>      
 subtitle:
-venue: "Submitted"
+venue: "Revised"
 arxiv: 
 code: 
 ---
