@@ -13,7 +13,7 @@ authors: <a href="https://leehyeonbeen.github.io/"><strong><u>Hyeonbeen Lee</u><
                   <a href="https://simonstepputtis.com/" target="_blank">Simon Stepputtis</a>,
                   <a href="https://www.jin-gyun-kim.com/" target="_blank">Jin-Gyun Kim</a>
 subtitle:
-venue: "Submitted"
+venue: "Under review"
 arxiv: https://doi.org/10.48550/arXiv.2604.12905
 code: https://github.com/leehyeonbeen/FDN
 dataset: https://doi.org/10.5281/zenodo.23026020
